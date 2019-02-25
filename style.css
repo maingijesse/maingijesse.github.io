@@ -4,6 +4,8 @@ body {
   background: #EEEEF4;
   color:#999;
   font-family:Roboto;
+	overflow-x: hidden;
+	
 }
 
 h1{
