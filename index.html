@@ -1,173 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
 
-<head>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-136350064-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <title>Jesse Mukonza Portfolio Website</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
 
-  gtag('config', 'UA-136350064-1');
-</script>
+      h1 {
+        font-family: "Bungee Inline", cursive;
+        font-size: 4rem;
+      }
+      p {
+        font-family: "Roboto", sans-serif;
+        font-size: 1.8rem;
+      }
+      .container {
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.65)),
+          url(https://images.pexels.com/photos/169573/pexels-photo-169573.jpeg?auto=compress&cs=tinysrgb&h=650&w=940)
+            no-repeat center/cover;
+      }
 
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
-  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Allerta+Stencil" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" />
-  <link rel="stylesheet" href="css/main.css">
-  <title>
-    <JESSE-MAINGI />
-  </title>
-
-  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
-  <link rel="icon" sizes="32x32" href="images/favicon/favicon-32x32.png" type="image/png">
-  <link rel="icon" sizes="16x16" href="images/favicon/favicon-16x16.png" type="image/png">
-  <link rel="manifest" href="images/favicon/site.webmanifest">
-  <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#5bbad5">
-  <meta name="msapplication-TileColor" content="#2b5797">
-  <meta name="theme-color" content="#ffffff">
-</head>
-
-<body>
-  <section id="section-top" class="text-white d-flex justify-content-center align-items-center animated zoomInLeft">
-    <div class="intro">
-      <h2 class="display-2 text-center">Jesse Maingi</h2>
-      <p class="text-center"><span class="typed"></span></p>
-    </div>
-  </section>
-  <nav class="navbar navbar-expand-md navbar-dark bg-danger sticky-top">
-    <a class="navbar-brand" href="#section-top"> <i class="fas fa-hands-helping fa-spin"></i>Jesse</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarcollapse">
-      <span> <i class="fa fa-bars"></i></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarcollapse">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item pl-3">
-          <a class="nav-link" href="#about"><i class="fa fa-arrow-circle-right pr-2"></i> About</a>
-        </li>
-        <li class="nav-item pl-3">
-          <a class="nav-link" href="#skills"> <i class="fas fa-cogs pr-2"></i> Skills</a>
-        </li>
-        <li class="nav-item pl-3">
-          <a class="nav-link" href="#contact"><i class="fa fa-envelope pr-2"></i> Contact</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-
-
-
-  <section class="container my-5" id="about">
-    <h2 class="text-center text-new border-bottom">About Me</h2>
-
-    <div class="row mx-auto">
-      <div class="col-md-6 mx-auto">
-        <img src="images/jesse.jpg" alt="jesse maingi" width="290" class="rounded-circle profileimage mb-4 wow rollIn"
-          data-wow-offset="25" data-wow-delay="0.5s">
-      </div>
-      <div class="col-md-6 my-auto content wow fadeInRight" data-wow-offset="25" data-wow-delay="0.5s">
-
-       Hi there. My name is Jesse, a freelance web developer and designer based in Nairobi, Kenya. I have gained a vast experience in using web technologies professionally over the last three years. I have great interest in designing responsive, attractive and user-friendly front end interfaces and also enjoy working in back end development.
-      </div>
-    </div>
-  </section>
-  <section id="skills" class="my-5 bg-light py-5 wow rotateInUpLeft" data-wow-offset="25" data-wow-delay="0.5s">
+      .content {
+        color: white;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
     <div class="container">
-      <h1 class="text-center display-4 text-new border-bottom">
-        Technical Skills and Tools
-      </h1>
-      <div class="row">
-        <div class="col-10 mx-auto  text-new p-4 d-flex justify-content-center skills-icons flex-wrap content">
-          <p class="m-3 fabtext"><span><i class="fab fa-html5 fa-2x"></i></span> Html 5</p>
-          <p class="m-3 fabtext"><span><i class="fab fa-css3 fa-2x"></i></span> CSS 3</p>
-          <p class="m-3 fabtext"><span><i class="fab fa-js fa-2x"></i></span> Javascript</p>
-          <p class="m-3 fabtext"><span><i class="devicon-jquery-plain"></i></span> jQuery</p>
-          <p class="m-3 fabtext"><span><i class="devicon-bootstrap-plain fa-2x"></i></span> Bootstrap</p>
-          <p class="m-3 fabtext"><span><i class="fab fa-npm fa-2x"></i></span> npm</p>
-          <p class="m-3 fabtext"><span><i class="devicon-nodejs-plain fa-2x"></i></span> Node js</p>
-          <p class="m-3 fabtext"><span><i class="fab fa-vuejs fa-2x"></i></span> Vue js</p>
-          <p class="m-3 fabtext"><span><i class="fab fa-php fa-2x"></i></span> php</p>
-          <p class="m-3 fabtext"><span><i class="devicon-mysql-plain fa-2x"></i></span> MySql</p>
-
-          <p class="m-3 fabtext"><span><i class="fab fa-github fa-2x"></i></span> Github</p>
-          <p class="m-3 fabtext"><span><i class="fab fa-chrome fa-2x"></i></span> Chrome</p>
-
-          <p class="m-3 fabtext"><span><i class="devicon-atom-original fa-2x"></i></span> Atom</p>
-          <p class="m-3 fabtext"><span><i class="devicon-photoshop-plain fa-2x"></i></span> Photoshop</p>
-          <p class="m-3 sm fabtext"><span><i class="fab fa-codepen fa-2x"></i></span> Codepen</p>
-          <p class="m-3 sm fabtext"><span><i class="devicon-visualstudio-plain fa-2x"></i></span> Visualstudio</p>
-          <p class="m-3 sm fabtext"><span><i class="fab fa-wordpress fa-2x"></i></span> Wordpress</p>
-
-        </div>
+      <div class="content">
+        <h1>Coming Soon...</h1>
+        <p>Currently redesigning and adding some projects to this page...</p>
       </div>
     </div>
-  </section>
-
-  <section id="contact" class="text-new py-5 mb-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-10 mx-auto text-center">
-          <h1>Contact me...</h1>
-          <p>Interested in working with me? Click the button below to send me a direct email
-            or
-            any of the social links to reach me through social media.</p>
-          <a href="mailto:maingijesse@gmail.com" class="btn btn-info p-2 px-5 text-white m-3 email wow bounceIn"><i
-              class="fas fa-envelope pr-2"></i> EMAIL</a>
-          <div class="social-links d-flex flex-wrap m-2 justify-content-around">
-            <a href="https://api.whatsapp.com/send?phone=+254725875313&text=Hi!" target="_blank" class="my-2 px-3"><span>
-                <i class="fab fa-whatsapp fa-3x whatsapp"></i>
-              </span>Whatsapp</a>
-            <a href="https://twitter.com/@cjmaingi" target="_blank" class="my-2 px-3"><span> <i class="fab fa-twitter fa-3x twitter"></i>
-              </span>Twitter</a>
-            <a href="https://instagram.com/jessemaingi" target="_blank" class="my-2 px-3"><span> <i class="fab fa-instagram fa-3x instagram"></i>
-              </span>Instagram</a>
-            <a href="https://codepen.io/JesseMukonza/" target="_blank" class="my-2 px-3"><span> <i class="fab fa-codepen fa-3x text-new"></i>
-              </span>Codepen</a>
-            <a href="https://github.com/maingijesse" target="_blank" class="my-2 px-3"><span> <i class="fab fa-github fa-3x github"></i>
-              </span>Github</a>
-            <!-- <a href="https://facebook.com/bigbrother.jesse" target="_blank" class="my-2 px-3"><span> <i class="fab fa-facebook fa-3x facebook"></i>
-              </span>Facebook</a> -->
-            <a href="https://www.linkedin.com/in/jesse-maingi-aa414a60/" target="_blank" class="my-2 px-3"><span> <i
-                  class="fab fa-linkedin fa-3x linkedin"></i>
-              </span>LinkedIn</a>
-
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <footer id="footer" class="footer bg-info text-white p-3 mt-5">
-    <div class="text-center">
-      <a href="https://www.facebook.com/bigbrother.jesse"><i class="fab fa-facebook-square fa-3x social"></i></a>
-      <a href="https://twitter.com/@cjmaingi"><i class="fab fa-twitter-square fa-3x social"></i></a>
-      <a href="mailto:maingijesse@gmail.com"><i class="fas fa-envelope fa-3x social"></i></a>
-      <a href="https://www.linkedin.com/in/jesse-maingi-aa414a60/"><i class="fab fa-linkedin fa-3x social"></i></a>
-
-      <p>&copy; <a href="https://maingijesse.github.io" class="text-white">Jesse Maingi</a>. All Rights Reserved</p>
-    </div>
-  </footer>
-
-  <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js"></script>
-
-
-  <script src="js/main.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-  <script>
-    new WOW({
-      mobile: false
-    }).init();
-  </script>
-</body>
-
+  </body>
 </html>
