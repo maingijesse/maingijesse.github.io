@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[3],{290:function(t,e,n){"use strict";n.r(e);var c={},l=n(29),component=Object(l.a)(c,(function(){var t=this,e=t.$createElement,n=t._self._c||e;return n("div",{staticClass:"container mx-auto"},[n("H1",{staticClass:"text-red-brand"},[t._v("Welcome")])],1)}),[],!1,null,null,null);e.default=component.exports}}]);
